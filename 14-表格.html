@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 表格属性
+        1、宽度 width 支持 px，百分比
+        2、高度 height 支持 px，百分比
+        3、边框 border
+        4、边框颜色 bordercolor
+        5、背景颜色 bgcolor
+        6、水平对齐 align="left or right or center"
+        7、cellspacing="单元格与单元格之间的间距"
+        8、cellpadding="单元格的内间距"
+    -->
+    <!-- 宽度百分比相对于父元素 高度由内容决定-->
+    <table border="1" width="50%" height="200" align="center" bgcolor="yellow"
+    bordercolor="red"
+    cellspacing="0"
+    cellpadding="10px"
+    >
+    <!-- tr属性
+        1、高度：height
+        2、背景颜色：bgcolor
+        3、文字水平对齐 align="left or right or center"
+        4、文字垂直对齐 valign="top or middle or bottom"
+    -->
+        <tr height="100" bgcolor="green" align="center" valign="bottom">
+            <!-- td 属性
+                1、宽度：width
+                2、高度：height
+                3、背景颜色：bgcolor
+                4、文字水平对齐 align="left or right or center"
+                5、文字垂直对齐 valign="top or middle or bottom"
+                6、rowspan：行合并
+                7、colspan：列合并
+            -->
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr >
+            <td width="50" height="100" bgcolor="pink" align="right" valign="top">2</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+    </table>
+</body>
+</html>

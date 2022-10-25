@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #iddiv {
+            background-color: blue;
+        }
+
+        .cdiv {
+            background-color: red;
+        }
+
+        div {
+            background-color: yellow;
+        }
+
+        div .pclass {
+            background-color: aqua;
+        }
+
+        div p {
+            background-color: green;
+        }
+
+        p {
+            background-color: orange !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 选择器权重 !important > 行内选择器 > 包含选择器 > id选择器 > class 选择器 > 元素选择器-->
+    <!-- 相同权重的选择器采取就近原则 -->
+    <div class="cdiv" id="iddiv" style="background-color: pink;">
+        111111111111
+        <p class="pclass">22222222222</p>
+    </div>
+    <p>33333333333</p>
+
+</body>
+
+</html>

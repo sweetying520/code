@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 文本属性
+        字体大小：font-size 单位 px 浏览器默认 16px，设计图常用字号 12px
+        字体：font-family
+        字体颜色：color：rgb，英文名称，十六进制
+        加粗：font-weight 100：细 400：正常 700：粗体 900：更粗体 或英文字母：lighter normal bold
+        倾斜：font-style italic oblique：倾斜 normal：正常
+        text-align：文本水平对齐 left center right justify：两端对齐
+        line-height：行高 如果 line-height == height 则可以实现文本垂直居中
+        letter-spacing：字母之间的间距
+        word-spacing：单词之间的间距
+        text-indent 首行缩进 单位：最好设置为 em
+        text-decoration：overline，line-through，underline，none
+        font：文字简写
+        text-transform：文本转换 capitalize uppercase lowercase none
+    -->
+    
+    <style>
+        .pclass{
+            font-size: 16px; 
+            color: rgb(0, 0, 255);
+            font-weight: bolder;
+            font-style: italic;
+
+        }
+        .p2class{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #14c145;
+        }
+        .box{
+            text-align: center;
+            width: 500px;
+            background-color: yellow;
+        }
+        .box2{
+            /* 两端对齐，只在多行文本中有效 */
+            text-align: justify;
+            width: 500px;
+            background-color: rgb(0, 153, 255);
+        }
+        .box3{
+            width: 500px;
+            height: 100px;
+            line-height: 100px;
+            background-color: rgb(255, 0, 230);
+            text-align: center;
+            color: white;
+        }
+        .box4{
+            width: 500px;
+            height: 100px;
+            line-height: 25px;
+            background-color: rgb(0, 255, 157);
+            text-align: left;
+        
+        }
+        .p1{
+            letter-spacing: 10px;
+        }
+        .p2{
+            letter-spacing: 10px;
+        }
+        .p3{
+            word-spacing: 10px;
+        }
+        .p4{
+            text-indent: 2em;
+        }
+        .p5{
+            text-decoration: underline overline;
+        }
+        .p6{
+            text-transform: lowercase;
+        }
+        /* 顺序不能变 斜体和粗体可省略 字体大小行高字体不能省略 */
+        .p7{
+            font: italic bold 20px/1em 微软雅黑;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">大家好</div>
+    <div class="box2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas pariatur, tempora at in totam enim blanditiis id voluptatibus temporibus dicta nulla atque est! Accusamus, mollitia cupiditate iure libero tempore odit?</div>
+    <div class="box3">
+        大家哈哈哈
+    </div>
+    <div class="box4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, dicta consequatur dolore iste provident ea fugiat ipsa distinctio numquam quaerat delectus nihil similique officia quisquam commodi rem repellat saepe esse?</div>
+    <p class="pclass">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam in ratione iste maxime provident accusantium harum. Aperiam, id, tempora sunt deserunt, nemo dolor voluptatibus ad doloribus quia odit itaque minus?
+    </p>
+    <p class="p2class">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam in ratione iste maxime provident accusantium harum. Aperiam, id, tempora sunt deserunt, nemo dolor voluptatibus ad doloribus quia odit itaque minus?
+    </p>
+    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias minus sint possimus a. Praesentium, eum odio. Numquam sit nulla atque asperiores sunt ab dolor itaque voluptates necessitatibus. Similique, magni!</p>
+    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias minus sint possimus a. Praesentium, eum odio. Numquam sit nulla atque asperiores sunt ab dolor itaque voluptates necessitatibus. Similique, magni!</p>
+    <p class="p3">&emsp;&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias minus sint possimus a. Praesentium, eum odio. Numquam sit nulla atque asperiores sunt ab dolor itaque voluptates necessitatibus. Similique, magni!</p>
+    <p class="p4">哈哈哈，我饿放假哦i文件佛i文件佛i微积分微积分i哦降温哦if降温哦批发价气温破IE飞机票钱哦IE我畏惧前方i哦额外积分i去</p>
+    <p class="p5">洗洗休息嘻嘻</p>
+    <p class="p6">哈哈哈wefiowjeofijweoif wefweifewf</p>
+    <p class="p7">我诶将分为i俄方微风</p>
+
+</body>
+</html>
